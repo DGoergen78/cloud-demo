@@ -13,11 +13,27 @@ def home():
         align-items:center;
         justify-content:center;
         font-family:Arial, sans-serif;
-        font-size:3rem;
-        color:#2563eb;
-        text-align:center;
       ">
-        There is no cloud, just other peoples computers
+        <div style="text-align:center">
+          <button onclick="showText()"
+            style="font-size:1.2rem;padding:10px 20px;">
+            Show message
+          </button>
+
+          <div id="msg" style="
+            display:none;
+            margin-top:20px;
+            font-size:3rem;
+            color:#2563eb;">
+            There is no cloud, just other peoples computers
+          </div>
+        </div>
+
+        <script>
+          function showText() {
+            document.getElementById("msg").style.display = "block";
+          }
+        </script>
       </body>
     </html>
     """
