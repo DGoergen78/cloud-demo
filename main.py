@@ -25,7 +25,7 @@ def home():
             margin-top:20px;
             font-size:3rem;
             color:#2563eb;">
-            There is no cloud, just other peoples computers
+            There is no cloud, just other peoples computers.
           </div>
         </div>
 
@@ -47,4 +47,5 @@ def about():
 @app.route("/cloud")
 def cloud():
     return "Serverless does not mean no servers"
+
 
