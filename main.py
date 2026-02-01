@@ -15,7 +15,7 @@ def home():
         font-family:Arial, sans-serif;
       ">
         <div style="text-align:center">
-          <button onclick="showText()"
+          <button id="btn" onclick="showText()"
             style="font-size:1.2rem;padding:10px 20px;">
             Show message
           </button>
@@ -32,11 +32,13 @@ def home():
         <script>
           function showText() {
             document.getElementById("msg").style.display = "block";
+            document.getElementById("btn").style.display = "none";
           }
         </script>
       </body>
     </html>
     """
+
 
 @app.route("/about")
 def about():
@@ -45,3 +47,4 @@ def about():
 @app.route("/cloud")
 def cloud():
     return "Serverless does not mean no servers"
+
