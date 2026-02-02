@@ -48,4 +48,9 @@ def about():
 def cloud():
     return "Serverless does not mean no servers"
 
+@app.route("/test")
+def cloud():
+    return "Test"
+
+
 
