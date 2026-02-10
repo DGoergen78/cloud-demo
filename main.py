@@ -42,11 +42,12 @@ def home():
 
 @app.route("/about")
 def about():
-    return "Simple Python app running on a PaaS platform"
+    return "Test"
 
 @app.route("/cloud")
 def cloud():
     return "Serverless does not mean no servers"
+
 
 
 
